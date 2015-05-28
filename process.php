@@ -23,7 +23,7 @@ $chapterDelimiter = '<h1>';
 
 
 //Load up the source
-$html = file_get_contents("{$sourceDirectory}/index.html");
+$html = file_get_contents("{$sourceDirectory}index.html");
 
 //Prepare (empty) the destination directory
 system ('rm -r '.$destinationDirectory.'*');
