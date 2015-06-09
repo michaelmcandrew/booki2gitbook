@@ -1,11 +1,15 @@
 <?php
-include_once('config.php');
+if(file_exists('config.php')){
+    include_once('config.php');
+} else {
+    die('Could not find config.php');
+}
 //Before using this script, you'll want to get a local copy of the manual that you want to export
 //You should do this with wget on a URL such as http://booki.flossmanuals.net/civicrm/_full/
 //
 //Something like the following (in an appropriate directory) should do the trick.
 
-//wget -E -H -k -K -p http://booki.flossmanuals.net/civicrm/_full/ 
+//wget -E -H -k -p http://booki.flossmanuals.net/civicrm/_full/ 
 
 //Then define the three config variables below.
 
