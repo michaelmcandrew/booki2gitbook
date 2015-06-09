@@ -2,7 +2,7 @@
 if(file_exists('config.php')){
     include_once('config.php');
 } else {
-    die('Could not find config.php');
+    die("Could not find config.php. Exiting...\n");
 }
 //Before using this script, you'll want to get a local copy of the manual that you want to export
 //You should do this with wget on a URL such as http://booki.flossmanuals.net/civicrm/_full/
