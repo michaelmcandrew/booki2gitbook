@@ -1,6 +1,6 @@
 <?php
-if(file_exists('config.php')){
-    include_once('config.php');
+if(file_exists(__DIR__.'/config.php')){
+    include_once(__DIR__.'/config.php');
 } else {
     die("Could not find config.php. Exiting...\n");
 }
